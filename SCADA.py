@@ -7,7 +7,7 @@ import sys
 pyautogui.FAILSAFE = True
 
 #def My_Documents(location):
-#	import ctypes.wintypes
+#	import ctypes.wintypes222
 #		#####-----This section discovers My Documents default path --------
 #	CSIDL_PERSONAL = location       # My Documents
 #	SHGFP_TYPE_CURRENT = 0   # Get current, not default value
