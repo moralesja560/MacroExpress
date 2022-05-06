@@ -46,7 +46,7 @@ pyautogui.hotkey('win','r')
 pyautogui.write('msedge.exe 10.65.64.27/startupcs.html')
 pyautogui.press('enter')
 time.sleep(10)
-pyautogui.hotkey('winleft','up')
+#pyautogui.hotkey('winleft','up')
 time.sleep(10)
 #pyautogui.press('f4')
 #pyautogui.write('10.65.64.27/startupcs.html')
@@ -65,4 +65,4 @@ button7point = pyautogui.center(scada_btn)
 #divide button coordinates into x and y3
 button7x, button7y = button7point
 pyautogui.click(button7x, button7y)
-
+sys.exit()
