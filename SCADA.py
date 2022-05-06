@@ -17,7 +17,7 @@ pyautogui.FAILSAFE = True
 #	#add the text filename at the end of the path
 #	temp_docs = buf.value
 #	return temp_docs
-
+#
 #try to detect IE installation
 #try #1: x86 files
 #output
