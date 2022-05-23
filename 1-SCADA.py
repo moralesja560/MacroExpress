@@ -29,10 +29,16 @@ pyautogui.write('mttopant')
 pyautogui.press('enter')
 time.sleep(10)
 #locate Vision General button
-scada_btn = pyautogui.locateOnScreen(resource_path(r"images/scadabutton.jpg"),grayscale=True, confidence=.7)
-#center the button
-button7point = pyautogui.center(scada_btn)
-#divide button coordinates into x and y3
-button7x, button7y = button7point
-pyautogui.click(button7x, button7y)
+
+scada_btn = pyautogui.locateOnScreen(resource_path(r"images/scadabutton.jpg"),grayscale=True, confidence=1)
+	#center the button
+if scada_btn == None:
+	print("no encontrado")
+
+else:
+	print(scada_btn)
+	button7point = pyautogui.center(scada_btn)
+	#divide button coordinates into x and y3
+	button7x, button7y = button7point
+	pyautogui.click(button7x, button7y)
 sys.exit()
